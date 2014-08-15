@@ -1,0 +1,19 @@
+extends layout
+
+block stylesheets
+	link(rel='stylesheet', href='/stylesheets/jquery.treegrid.css')
+
+block content
+	h1= title
+	p Welcome to #{title}
+
+	table.tree
+		tr#treegrid-1.treegrid-1
+			td Root node
+			td Additional info
+		tr#treegrid-2.treegrid-2.treegrid-parent-1.loading
+			td Loading
+			td &nbsp;
+
+block scripts
+	script(src="/javascripts/treegrid.js")
