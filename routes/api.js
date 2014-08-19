@@ -30,7 +30,7 @@ router.get('/', function(req, res) {
 	
 	setTimeout(function() {
 		res.json({nodes: nodes});
-	}, 5000);
+	}, 100);
 });
 
 module.exports = router;

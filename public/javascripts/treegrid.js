@@ -36,7 +36,7 @@ $(document).ready(function() {
                     expandedNodeIds.forEach(function(nodeId) {
                         $("#" + nodeId).treegrid("expand");
                     });
-                }, 1);
+                }, 0);
             });
 
         }
